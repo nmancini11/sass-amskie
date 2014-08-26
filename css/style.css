@@ -1,0 +1,215 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 10%;
+  font-family: "Roboto", sans-serif;
+  color: #02294d;
+  background-color: white; }
+
+body, html {
+  /* important */
+  height: 100%; }
+
+a {
+  color: #fc5b3f;
+  text-decoration: none; }
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto; }
+  .cd-container::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both; }
+
+.cd-container-columns {
+  width: 100%;
+  margin: 0 auto; }
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: #02294d;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2; }
+  .cd-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .cd-header #cd-logo {
+    float: left;
+    margin: 0px 0 0 5%; }
+    .cd-header #cd-logo img {
+      display: block; }
+  @media only screen and (min-width: 320px) {
+    .cd-header {
+      height: 45px; } }
+  @media only screen and (min-width: 768px) {
+    .cd-header {
+      height: 70px; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-header {
+      height: 100px; }
+      .cd-header #cd-logo {
+        margin: 0px 0 0 5%; } }
+
+.cd-main-nav {
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url("../img/cd-icon-menu.svg") no-repeat center center;
+  background-size: 36px 36px;
+  cursor: pointer; }
+  .cd-main-nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%); }
+    .cd-main-nav ul.is-visible {
+      -webkit-transform: translateY(45px);
+      -moz-transform: translateY(45px);
+      -ms-transform: translateY(45px);
+      -o-transform: translateY(45px);
+      transform: translateY(45px); }
+  .cd-main-nav a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 5%;
+    background: #011c34;
+    border-top: 1px solid #02315c;
+    color: #fffff; }
+  .cd-main-nav input {
+    padding: 5px 0px;
+    background: #011c34;
+    background-image: url("/img/search.svg");
+    border: none;
+    border-radius: 2px;
+    width: 250px;
+    padding-left: 25px;
+    width: 300px;
+    font-size: 13px;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: none; }
+  .cd-main-nav input:focus {
+    box-shadow: 0 0 5px #03437f;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid #03437f;
+    padding-left: 25px;
+    padding-right: 5px; }
+  @media only screen and (min-width: 320px) {
+    .cd-main-nav {
+      width: auto;
+      height: auto;
+      background: url("../img/cd-icon-menu.svg") no-repeat right top;
+      cursor: auto; }
+      .cd-main-nav ul {
+        position: relative;
+        width: auto;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+        line-height: 45px; }
+        .cd-main-nav ul.is-visible {
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0);
+          margin-top: 42px; }
+      .cd-main-nav li {
+        display: inline-block;
+        margin-left: 1em;
+        width: 100%; }
+      .cd-main-nav a {
+        display: block;
+        height: auto;
+        line-height: normal;
+        background: transparent;
+        padding: .6em 1em;
+        border-top: 1px solide #02294d;
+        color: #02294d;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        font-size: 0.875rem; }
+        .no-touch .cd-main-nav a:hover {
+          color: #068587; } }
+  @media only screen and (min-width: 768px) {
+    .cd-main-nav {
+      background: none; }
+      .cd-main-nav ul {
+        position: static;
+        width: auto;
+        margin-top: 0px;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+        line-height: 70px; }
+        .cd-main-nav ul.is-visible {
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0);
+          margin-top: 0px; }
+        .cd-main-nav ul li {
+          display: inline-block;
+          margin-left: 1em;
+          width: auto; }
+        .cd-main-nav ul a {
+          display: block;
+          height: auto;
+          line-height: normal;
+          background: transparent;
+          padding: .6em 1em;
+          border-top: none;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 14px;
+          font-size: 0.875rem; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-main-nav ul {
+      line-height: 100px; } }
