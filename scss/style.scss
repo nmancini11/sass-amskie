@@ -1,5 +1,7 @@
 @import 'bourbon'; // http://bourbon.io/
 
+@import "neat/neat"; // neat grid for bourbon
+
 @import '../partials/variables'; // colors, fonts etc...
 
 @import '../partials/mixins'; // custom mixins
@@ -266,7 +268,7 @@ Main components
 
 
 .container {
-	max-width: $screen-width-L;
+	@include span-columns(12);
 	position: relative;
 	margin: 0px auto;
 	top: 130px;
@@ -274,15 +276,14 @@ Main components
 }
 
 .post-container {
-	width: 80%;
+	@include span-columns(9);
 	float: left;
 }
 
 .archive {
-	width: 16%;
+	@include span-columns(3);
 	float: left;
-	margin: 15px;
-	padding-left: 50px;
+	margin: 15px 0px;
 
 	h2 {
  		font-size: 2rem;

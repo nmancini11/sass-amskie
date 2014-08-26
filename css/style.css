@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .button {
   background: #fff;
   border: 3px solid #02294d;
@@ -244,21 +249,35 @@ Main components
       line-height: 100px; } }
 
 .container {
-  max-width: 1170px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
   position: relative;
   margin: 0px auto;
   top: 130px;
   padding: 0% 2%; }
+  .container:last-child {
+    margin-right: 0; }
 
 .post-container {
-  width: 80%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
   float: left; }
+  .post-container:last-child {
+    margin-right: 0; }
 
 .archive {
-  width: 16%;
   float: left;
-  margin: 15px;
-  padding-left: 50px; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  float: left;
+  margin: 15px 0px; }
+  .archive:last-child {
+    margin-right: 0; }
   .archive h2 {
     font-size: 2rem; }
   .archive ul {
