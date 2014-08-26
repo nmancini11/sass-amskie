@@ -6,6 +6,8 @@
 
 @import '../partials/layout'; // responsive grid and media queries
 
+@import '../partials/buttons'; // style mi buttons yarh
+
 /* -------------------------------- 
 
 Primary style
@@ -33,11 +35,17 @@ body {
 body, html {
 	/* important */
 	height: 100%;
+	background-color: #f8f8f8;
 }
 
 a {
 	color: $color-3;
 	text-decoration: none;
+	font-family: $secondary-font;
+}
+
+p {
+	font-family: $secondary-font;
 }
 
 /* -------------------------------- 
@@ -80,7 +88,7 @@ Main components
 	z-index: index($main-elements, navigation); // see partials > _variables.scss
 	@include clearfix;
 
-	#cd-logo {
+	.cd-logo {
 		float: left;
 		margin: 0px 0 0 5%;
 
@@ -90,17 +98,31 @@ Main components
 	}
 	@include MQ(S) {
 		height: $header-height-S;
+
+		img {
+			max-height: $header-height-S;
+		}
 	}
 
 	@include MQ(M) {
 		height: $header-height-M;
+
+		img {
+			max-height: $header-height-M;
+		}
 	}
 
 	@include MQ(L) {
 		height: $header-height-L;
 
-		#cd-logo {
+		.cd-logo {
 			margin: 0px 0 0 5%;
+			position: relative;
+			top: 15px;
+		}
+
+		img {
+			max-height: $header-height-L;
 		}
 	}	
 }
@@ -110,7 +132,6 @@ Main components
 	margin-right: 5%;
 	width: 44px;
 	height: 100%;
-	background: url('../img/cd-icon-menu.svg') no-repeat center center;
 	background-size: 36px 36px;
 	cursor: pointer;
 
@@ -137,9 +158,9 @@ Main components
 	}
 
 	input {
-	    padding: 5px 0px;
+	    padding: 8px 0px;
 	    background: darken($color-1, 5%);
-	    background-image:url('/img/search.svg');
+	    background-image:url('/images/search.svg');
 	    border: none;
 	    border-radius: 2px;
 	    width: 250px;
@@ -153,7 +174,7 @@ Main components
 
 	input:focus { 
 	    box-shadow: 0 0 5px lighten($color-1, 10%);
-	  	padding: 3px 0px 3px 3px;
+	  	padding: 8px 0px 8px 0px;
 	  	margin: 5px 1px 3px 0px;
 	  	border: 2px solid lighten($color-1, 10%);
 	  	padding-left:25px;
@@ -163,7 +184,7 @@ Main components
 	@include MQ(S) {
 		width: auto;
 		height: auto;
-		background: url('../img/cd-icon-menu.svg') no-repeat right top;
+		background: url('../images/cd-icon-menu.svg') no-repeat right top;
 		cursor: auto;
 
 		ul {
@@ -192,7 +213,6 @@ Main components
 			padding: .6em 1em;
 			border-top: 1px solide $color-1;
 			color: $color-1;
-			text-transform: uppercase;
 			font-weight: bold;
 			@include font-size(14px);
 
@@ -229,7 +249,6 @@ Main components
 			padding: .6em 1em;
 			border-top: none;
 			color: #ffffff;
-			text-transform: uppercase;
 			font-weight: bold;
 			@include font-size(14px);
 			}
@@ -242,3 +261,108 @@ Main components
 	}
 
 }
+  
+
+
+
+.container {
+	max-width: $screen-width-L;
+	position: relative;
+	margin: 0px auto;
+	top: 130px;
+	padding: 0% 2%;
+}
+
+.post-container {
+	width: 80%;
+	float: left;
+}
+
+.archive {
+	width: 16%;
+	float: left;
+	margin: 15px;
+	padding-left: 50px;
+
+	h2 {
+ 		font-size: 2rem;
+
+ 	}
+
+ 	ul {
+ 	margin-bottom: 25px;
+ 	}
+
+ 	li {
+ 		font-size: .9rem;
+ 		line-height: 2.5rem;
+ 	} 
+
+ 	a {
+ 		color: darken($color-3, 50%);
+ 	}
+}
+
+.post {
+ 	float: left;
+ 	position: relative;
+ 	max-height: 271px;
+ 	margin: 15px 0px;
+ 	-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	width: 100%;
+	background-color: #fff;
+
+ 	.post-image {
+ 		float: left;
+ 		width:40%;
+ 	}
+
+ 	.post-text {
+ 		float: left;
+ 		padding: 35px;
+ 		height: 271px;
+ 		width: 60%;
+ 		background-color: #fff;
+ 	}
+
+ 	h2 {
+ 		font-size: 2rem;
+ 	}
+
+ 	p.post-date {
+ 		font-size: 2rem;
+ 		float: left;
+ 		margin-right: 5px;
+ 		color: $color-2;
+ 		font-family: $primary-font;
+ 	}
+
+ 	a {
+ 		color: $color-3;
+ 		float: left;
+ 		margin-right: 10px;
+ 		padding-right: 10px;
+ 		font-size: .7rem;
+ 		line-height: 1.4em;
+ 		border-right: 1px solid $color-3;
+ 		text-align: center;
+ 	}
+
+ 	a.post-comments {
+ 		border-right: none;
+ 	}
+ 	p.post-intro {
+ 		font-size: 1rem;
+ 		line-height: 1.3rem;
+ 		max-height: 110px;
+ 		clear: both;
+ 		padding-top: 10px;
+ 		color: darken($color-3, 50%);
+ 		overflow: hidden;
+ 		text-overflow: ellipsis;
+ 	}
+}
+
+

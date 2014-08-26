@@ -1,0 +1,21 @@
+.button {
+  background: #fff;
+  border: 3px solid $color-1;
+  border-top: 3px solid $color-1;
+  border-bottom: 3px solid $color-1;
+  color: $color-1;
+  height: 40px;
+  cursor: pointer;
+  padding: 4px 10px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  margin-top: 20px;
+  font-size: .90rem;
+
+  &:hover {
+    background: $color-1;
+    color: #fff;
+  }
+}

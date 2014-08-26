@@ -1,8 +1,8 @@
 // colors
 
 $color-1: #02294d; // blue
-$color-2: #068587; // green dark
-$color-3: #fc5b3f; // green light
+$color-2: #7db2e6; // light-blue
+$color-3: #c6c6c6; // light-grey
 $color-4: #ffffff; // white
 
 //header height
@@ -11,9 +11,15 @@ $header-height-S: 45px;
 $header-height-M: 70px;
 $header-height-L: 100px;
 
+// screen widths
+$screen-width-S: 320px;
+$screen-width-M: 768px;
+$screen-width-L: 1170px;
+
 // fonts 
 
-$primary-font: 'Roboto', sans-serif;
+$primary-font: 'Bebas Neue', sans-serif;
+$secondary-font: 'Georgia', sans-serif;
 
 //z-index - order the elements from the lowest z-index(left) to the highest(right)
 

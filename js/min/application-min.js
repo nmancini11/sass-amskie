@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".cd-main-nav").on("click",function(i){$(i.target).is(".cd-main-nav")&&$(this).children("ul").toggleClass("is-visible")})});
+$(document).ready(function(){$(".cd-main-nav").on("click",function(n){$(n.target).is(".cd-main-nav")&&$(this).children("ul").toggleClass("is-visible")}),$(".spin").mouseenter(function(){$(this).addClass("animated rotateIn")})});
