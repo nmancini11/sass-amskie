@@ -92,7 +92,7 @@ Main components
 
 	.cd-logo {
 		float: left;
-		margin: 0px 0 0 5%;
+		margin: 0px 0 0 3%;
 
 		img {
 			display: block;
@@ -118,7 +118,7 @@ Main components
 		height: $header-height-L;
 
 		.cd-logo {
-			margin: 0px 0 0 5%;
+			margin: 0px 0 0 2%;
 			position: relative;
 			top: 15px;
 		}
@@ -130,17 +130,13 @@ Main components
 }
 
 .cd-main-nav {
-	float: right;
-	margin-right: 5%;
-	width: 44px;
 	height: 100%;
 	background-size: 36px 36px;
 	cursor: pointer;
+	float: right;
 
 	ul {
-		position: absolute;
-		top: 0;
-		left: 0;
+		float: right;
 		width: 100%;
 		@include transform(translateY(0%));
 
@@ -165,9 +161,9 @@ Main components
 	    background-image:url('/images/search.svg');
 	    border: none;
 	    border-radius: 2px;
-	    width: 250px;
+	    min-width: 350px;
 	    padding-left:25px;
-	    width:300px;
+	    max-width:100%;
 		font-size:13px;color:#ffffff;
 		background-repeat:no-repeat;
 		background-position:left center;
@@ -177,64 +173,72 @@ Main components
 	input:focus { 
 	    box-shadow: 0 0 5px lighten($color-1, 10%);
 	  	padding: 8px 0px 8px 0px;
-	  	margin: 5px 1px 3px 0px;
 	  	border: 2px solid lighten($color-1, 10%);
 	  	padding-left:25px;
 	  	padding-right:5px;
 	}
 
 	@include MQ(S) {
-		width: auto;
-		height: auto;
 		background: url('../images/cd-icon-menu.svg') no-repeat right top;
 		cursor: auto;
+		float: none;
 
 		ul {
-			position: relative;
-			width: auto;
-			@include transform(translateY(-100%));
+			@include transform(translateY(-200%));
 			line-height: $header-height-S;
+			background-color: $color-1;
+			position: relative;
+			top: 0px;
 
 			&.is-visible {
-				@include transform(translateY(0));
-				margin-top: 42px;
+				@include transform(translateY(0%));
 			}
 		}
 
 		li {
-			display: inline-block;
-			margin-left: 1em;
+			display: block;
+			position: relative;
+			margin: 0 1em;
 			width: 100%;
+			background-color: $color-1;
 		}
 
 		a {
-			display: block;
-			height: auto;
 			line-height: normal;
 			background: transparent;
 			padding: .6em 1em;
 			border-top: 1px solide $color-1;
-			color: $color-1;
+			color: #ffffff;
 			font-weight: bold;
+			font-family: $primary-font;
 			@include font-size(14px);
 
 			.no-touch &:hover {
 				color: $color-2;
 			}
 		}
+
+		img {
+			margin-right: 15px;
+		}
+
+		input {
+		    width:97%;
+		}
 	}
 	@include MQ(M) {
 		background: none;
 
 		ul {
-			position: static;
 			width: auto;
 			margin-top: 0px;
 			@include transform(translateY(0%));
 			line-height: $header-height-M;
+			position: relative;
+			top: 0px;
 
 			&.is-visible {
-				@include transform(translateY(0));
+				@include transform(translateY(0%));
 				margin-top: 0px;
 			}
 
@@ -244,15 +248,7 @@ Main components
 			width: auto;
 			}
 		a {
-			display: block;
-			height: auto;
-			line-height: normal;
-			background: transparent;
-			padding: .6em 1em;
-			border-top: none;
-			color: #ffffff;
-			font-weight: bold;
-			@include font-size(14px);
+			font-size: 0px;
 			}
 		}
 	}
