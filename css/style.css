@@ -21,6 +21,139 @@
   .button:hover {
     background: #02294d;
     color: #fff; }
+  @media only screen and (min-width: 960px) {
+    .button {
+      left: auto;
+      right: 30px; } }
+
+.post {
+  float: left;
+  position: relative;
+  margin: 15px 0px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .post:last-child {
+    margin-right: 0; }
+  .post .post-image {
+    float: left;
+    max-height: 325px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .post .post-image:last-child {
+      margin-right: 0; }
+    .post .post-image img {
+      width: 100%; }
+  .post .post-text {
+    float: left;
+    padding: 30px;
+    height: 271px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background-color: #fff; }
+    .post .post-text:last-child {
+      margin-right: 0; }
+  .post h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .post p.post-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+    color: #7db2e6;
+    font-family: "Bebas Neue", sans-serif; }
+  .post a {
+    color: #c6c6c6;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: .7rem;
+    line-height: 1.4em;
+    border-right: 1px solid #c6c6c6;
+    text-align: center; }
+  .post a.post-comments {
+    border-right: none; }
+  .post p.post-intro {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    clear: both;
+    padding-top: 10px;
+    color: #474747;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    max-height: 110px; }
+  @media only screen and (min-width: 500px) {
+    .post {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      max-height: 575px; }
+      .post:last-child {
+        margin-right: 0; }
+      .post h2, .post p.post-date {
+        font-size: 1.8rem; }
+      .post .post-image {
+        max-height: 325px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .post .post-image:last-child {
+          margin-right: 0; } }
+  @media only screen and (min-width: 768px) {
+    .post .post-image {
+      max-height: 325px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .post .post-image:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 960px) {
+    .post {
+      max-height: 275px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%; }
+      .post:last-child {
+        margin-right: 0; }
+      .post .post-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        float: left;
+        padding: 30px;
+        height: 275px;
+        background-color: #fff; }
+        .post .post-text:last-child {
+          margin-right: 0; }
+      .post .post-image {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-right: 0px; }
+        .post .post-image:last-child {
+          margin-right: 0; }
+        .post .post-image img {
+          height: 275px;
+          width: auto; } }
 
 /* -------------------------------- 
 
@@ -332,125 +465,3 @@ Main components
       width: 14.70196%; }
       .archive:last-child {
         margin-right: 0; } }
-
-.post {
-  float: left;
-  position: relative;
-  margin: 15px 0px;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
-  background-color: #fff;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .post:last-child {
-    margin-right: 0; }
-  .post .post-image {
-    float: left;
-    max-height: 325px;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .post .post-image:last-child {
-      margin-right: 0; }
-    .post .post-image img {
-      width: 100%; }
-  .post .post-text {
-    float: left;
-    padding: 30px;
-    height: 271px;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    background-color: #fff; }
-    .post .post-text:last-child {
-      margin-right: 0; }
-  .post h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-  .post p.post-date {
-    font-size: 1.5rem;
-    font-weight: bold;
-    float: left;
-    margin-right: 5px;
-    color: #7db2e6;
-    font-family: "Bebas Neue", sans-serif; }
-  .post a {
-    color: #c6c6c6;
-    float: left;
-    margin-right: 10px;
-    padding-right: 10px;
-    font-size: .7rem;
-    line-height: 1.4em;
-    border-right: 1px solid #c6c6c6;
-    text-align: center; }
-  .post a.post-comments {
-    border-right: none; }
-  .post p.post-intro {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    clear: both;
-    padding-top: 10px;
-    color: #474747;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
-    max-height: 110px; }
-  @media only screen and (min-width: 500px) {
-    .post {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      max-height: 575px; }
-      .post:last-child {
-        margin-right: 0; }
-      .post h2, .post p.post-date {
-        font-size: 1.8rem; }
-      .post .post-image {
-        max-height: 325px;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        .post .post-image:last-child {
-          margin-right: 0; } }
-  @media only screen and (min-width: 768px) {
-    .post .post-image {
-      max-height: 325px;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .post .post-image:last-child {
-        margin-right: 0; } }
-  @media only screen and (min-width: 960px) {
-    .post {
-      max-height: 275px;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%; }
-      .post:last-child {
-        margin-right: 0; }
-      .post .post-image {
-        max-height: 225px;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
-        .post .post-image:last-child {
-          margin-right: 0; }
-      .post .post-text {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 74.41059%; }
-        .post .post-text:last-child {
-          margin-right: 0; } }

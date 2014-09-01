@@ -18,4 +18,9 @@
     background: $color-1;
     color: #fff;
   }
+
+  @include MQ(L) {
+    left: auto;
+    right: 30px;
+  }
 }
