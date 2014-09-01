@@ -10,6 +10,8 @@
 
 @import '../partials/buttons'; // style mi buttons yarh
 
+@import '../partials/post'; // style mi buttons yarh
+
 /* -------------------------------- 
 
 Primary style
@@ -339,113 +341,3 @@ Main components
  		@include span-columns(2);
 	}
 }
-
-.post {
- 	float: left;
- 	position: relative;
- 	margin: 15px 0px;
- 	-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
-	-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
-	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
-	background-color: #fff;
-	@include span-columns(12);
-
- 	.post-image {
- 		float: left;
- 		max-height: 325px;
- 		@include span-columns(12);
-
- 		img {
- 			@include fill-parent;
- 		}
- 	}
-
- 	.post-text {
- 		float: left;
- 		padding: 30px;
- 		height: 271px;
- 		@include span-columns(12);
- 		background-color: #fff;
- 	}
-
- 	h2 {
- 		font-size: 1.5rem;
- 		font-weight: bold;
- 		white-space: nowrap; 
-	    overflow: hidden;
-	    text-overflow: ellipsis;
- 	}
-
- 	p.post-date {
- 		font-size: 1.5rem;
- 		font-weight: bold;
- 		float: left;
- 		margin-right: 5px;
- 		color: $color-2;
- 		font-family: $primary-font;
- 	}
-
- 	a {
- 		color: $color-3;
- 		float: left;
- 		margin-right: 10px;
- 		padding-right: 10px;
- 		font-size: .7rem;
- 		line-height: 1.4em;
- 		border-right: 1px solid $color-3;
- 		text-align: center;
- 	}
-
- 	a.post-comments {
- 		border-right: none;
- 	}
- 	p.post-intro {
- 		font-size: 1rem;
- 		line-height: 1.6rem;
- 		clear: both;
- 		padding-top: 10px;
- 		color: darken($color-3, 50%);
- 		overflow-y: hidden;
- 		text-overflow: ellipsis;
- 		max-height: 110px;
- 	}
-
- 	@include MQ(S) {
- 		@include span-columns(12);
- 		max-height: 575px;
-
- 		h2, p.post-date {
- 			font-size: 1.8rem;
- 		}
-
- 		.post-image {
- 			max-height: 325px;
- 			@include span-columns(12);
- 		}
-		
-	}
-
-	@include MQ(M) {
- 		.post-image {
- 			max-height: 325px;
- 			@include span-columns(12);
- 		}
-		
-	}
-
- 	@include MQ(L) {
-		max-height: 275px;
-		@include span-columns(10);
-
-		 .post-image {
- 			max-height: 225px;
- 			@include span-columns(3);
- 		}
-
- 		.post-text {
-	 		@include span-columns(9);
-	 	}
-	}
-}
-
-
