@@ -121,6 +121,7 @@ div.jp-audio div.jp-progress {
 div.jp-audio div.jp-type-single div.jp-progress {
 	width: 64%;
 	margin-left: 12%;
+	z-index: 104;
 }
 /*div.jp-audio div.jp-type-playlist div.jp-progress {
 	left:166px;
