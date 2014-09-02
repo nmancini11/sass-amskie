@@ -25,8 +25,16 @@ $(document).ready(function () {
     });
 
     $(window).on('scroll', function () {
+    	var $headerHeight = 100;
+    	if ($(window).width() < 768){
+    		$headerHeight = 45;
+    	}
+    	else if ($(window).width() < 960){
+    		$headerHeight = 70;
+    	}
+
         $('.jp-audio').each(function () {
-            if ($(this).offset().top <= $(window).scrollTop() + 100) {
+            if ($(this).offset().top <= $(window).scrollTop() + $headerHeight) {
                 $(this).addClass('hideMe').addClass('fadeOut');
             }
             else if ($(this).offset().top >= $(window).scrollTop() + $(window).height() * 0) {
