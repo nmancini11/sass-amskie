@@ -65,35 +65,36 @@
   .post h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #02294d;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .post p.post-date {
     font-size: 1.5rem;
     font-weight: bold;
-    float: left;
-    margin-right: 5px;
     color: #7db2e6;
-    font-family: "Bebas Neue", sans-serif; }
+    font-family: "Bebas Neue", sans-serif;
+    float: left;
+    margin-right: 5px; }
   .post a {
     color: #c6c6c6;
-    float: left;
-    margin-right: 10px;
-    padding-right: 10px;
     font-size: .7rem;
     line-height: 1.4em;
     border-right: 1px solid #c6c6c6;
-    text-align: center; }
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px; }
   .post a.post-comments {
     border-right: none; }
   .post p.post-intro {
     font-size: 1rem;
     line-height: 1.6rem;
-    clear: both;
-    padding-top: 10px;
     color: #474747;
     overflow-y: hidden;
     text-overflow: ellipsis;
+    clear: both;
+    padding-top: 10px;
     max-height: 110px; }
   @media only screen and (min-width: 500px) {
     .post {
@@ -154,6 +155,107 @@
         .post .post-image img {
           height: 275px;
           width: auto; } }
+
+.post-audio {
+  float: left;
+  position: relative;
+  margin: 15px 0px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .post-audio:last-child {
+    margin-right: 0; }
+  .post-audio .post-intro {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #474747;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    clear: both;
+    padding-top: 10px;
+    height: 100%; }
+  .post-audio .post-text {
+    float: left;
+    padding: 30px;
+    height: 275px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background-color: #fff; }
+    .post-audio .post-text:last-child {
+      margin-right: 0; }
+  .post-audio h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #02294d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .post-audio p.post-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7db2e6;
+    font-family: "Bebas Neue", sans-serif;
+    float: left;
+    margin-right: 5px; }
+  .post-audio a {
+    color: #c6c6c6;
+    font-size: .7rem;
+    line-height: 1.4em;
+    border-right: 1px solid #c6c6c6;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: none; }
+  .post-audio a.post-comments {
+    border-right: none; }
+  .post-audio p.post-intro {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #474747;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    clear: both;
+    padding-top: 10px;
+    max-height: 110px; }
+  @media only screen and (min-width: 500px) {
+    .post-audio {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      max-height: 575px; }
+      .post-audio:last-child {
+        margin-right: 0; }
+      .post-audio h2, .post-audio p.post-date {
+        font-size: 1.8rem; } }
+  @media only screen and (min-width: 960px) {
+    .post-audio {
+      max-height: 375px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%; }
+      .post-audio:last-child {
+        margin-right: 0; }
+      .post-audio .post-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        float: left;
+        padding: 30px;
+        height: 275px;
+        background-color: #fff; }
+        .post-audio .post-text:last-child {
+          margin-right: 0; } }
 
 /* -------------------------------- 
 
