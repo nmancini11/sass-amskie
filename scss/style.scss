@@ -352,6 +352,13 @@ Main components
 
  	ul {
  	margin-bottom: 25px;
+ 	position: relative;
+ 	padding: 20px;
+	margin: 15px 0px;
+	-webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	background-color: #fff;
  	}
 
  	li {
@@ -365,10 +372,20 @@ Main components
 
  	@include MQ(S) {
 		@include span-columns(3);
+
+		ul {
+			padding: 0px;
+			margin: 0 0 30px 0;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			background-color: #f8f8f8;
+		}
 	}
 
 	@include MQ(M) {
 		@include span-columns(3);
+
 	}
 
  	@include MQ(L) {
