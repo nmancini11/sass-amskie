@@ -33,7 +33,6 @@ body {
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: $color-1;
-	background-color: $color-4;
 }
 
 body, html {
@@ -277,7 +276,6 @@ Main components
 	margin: 0px auto;
 	top: 50px;
 	padding: 0% 2%;
-	background-color: #00f;
 	width: 100%;
 
 	@include MQ(M) {
@@ -287,7 +285,43 @@ Main components
 	@include MQ(L) {
 		top: 130px;
 	}
+
+	.page-title {
+		font-size: 2rem;
+		line-height: 3rem;
+		font-weight: bold;
+		background-color: #f8f8f8;
+		@include span-columns(12);
+	}
+
+	.post-page-title {
+		font-size: 2rem;
+		line-height: 3rem;
+		font-weight: bold;
+		background-color: #f8f8f8;
+		margin-left: 0%;
+	}
+
+	@include MQ(S) {
+		
+	}
+
+	@include MQ(M) {
+		.post-page-title {
+			font-size: 2rem;
+			line-height: 3rem;
+			font-weight: bold;
+			background-color: #f8f8f8;
+			margin-left: 7.2%;
+		}
+	}
+
+ 	@include MQ(L) {
+ 		
+	}
 }
+
+
 
 .post-container {
 	@include span-columns(12);
@@ -340,4 +374,40 @@ Main components
  	@include MQ(L) {
  		@include span-columns(2);
 	}
+}
+
+.archive-full {
+	@include span-columns(12);
+	float: left;
+	margin: 15px 0px;
+
+	h2 {
+ 		font-size: 1.8rem;
+ 		font-weight: bold;
+ 	}
+
+ 	ul {
+ 	margin-bottom: 25px;
+ 	position: relative;
+ 	padding: 20px;
+	margin: 15px 0px;
+	-webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+ 	}
+
+ 	li {
+ 		font-size: .9rem;
+ 		line-height: 2.5rem;
+ 	} 
+
+ 	a {
+ 		color: darken($color-3, 50%);
+ 	}
+
+ 	@include MQ(S) {
+		display: none;
+	}
+
 }

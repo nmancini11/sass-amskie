@@ -9,15 +9,16 @@
   border-top: 3px solid #02294d;
   border-bottom: 3px solid #02294d;
   color: #02294d;
-  height: 40px;
   cursor: pointer;
-  padding: 4px 10px 5px;
+  padding: 4px 10px 0px;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
   left: 30px;
   margin-top: 20px;
-  font-size: .90rem; }
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-family: "Bebas Neue", sans-serif; }
   .button:hover {
     background: #02294d;
     color: #fff; }
@@ -25,6 +26,41 @@
     .button {
       left: auto;
       right: 30px; } }
+
+.post-button {
+  background: #fff;
+  border-radius: 4px;
+  border: 3px solid #293e51;
+  border-top: 3px solid #293e51;
+  border-bottom: 3px solid #293e51;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 30px 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: static;
+  right: 0px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  background: #293e51;
+  font-family: "Bebas Neue", sans-serif; }
+  .post-button:hover {
+    background: #02294d;
+    color: #fff; }
+  @media only screen and (min-width: 500px) {
+    .post-button {
+      left: auto; } }
+  @media only screen and (min-width: 960px) {
+    .post-button {
+      left: auto;
+      color: #fff;
+      cursor: pointer;
+      padding: 6px 30px 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: absolute;
+      right: 0px;
+      margin-top: 40px; } }
 
 .post {
   float: left;
@@ -76,11 +112,12 @@
     font-family: "Bebas Neue", sans-serif;
     float: left;
     margin-right: 5px; }
-  .post a {
+  .post a.post-author, .post a.post-tags, .post a.post-comments {
     color: #c6c6c6;
     font-size: .7rem;
     line-height: 1.4em;
     border-right: 1px solid #c6c6c6;
+    font-family: "Georgia", sans-serif;
     text-align: center;
     float: left;
     margin-right: 10px;
@@ -204,16 +241,16 @@
     font-family: "Bebas Neue", sans-serif;
     float: left;
     margin-right: 5px; }
-  .post-audio a {
+  .post-audio a.post-author, .post-audio a.post-tags, .post-audio a.post-comments {
     color: #c6c6c6;
     font-size: .7rem;
     line-height: 1.4em;
     border-right: 1px solid #c6c6c6;
+    font-family: "Georgia", sans-serif;
     text-align: center;
     float: left;
     margin-right: 10px;
-    padding-right: 10px;
-    border-right: none; }
+    padding-right: 10px; }
   .post-audio a.post-comments {
     border-right: none; }
   .post-audio p.post-intro {
@@ -257,6 +294,230 @@
         .post-audio .post-text:last-child {
           margin-right: 0; } }
 
+.post-full {
+  float: left;
+  position: relative;
+  margin: 15px 0px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-left: 0%; }
+  .post-full:last-child {
+    margin-right: 0; }
+  .post-full .post-image {
+    float: left;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    max-height: 420px; }
+    .post-full .post-image:last-child {
+      margin-right: 0; }
+    .post-full .post-image img {
+      width: 100%; }
+  .post-full .post-text {
+    padding: 30px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background-color: #fff; }
+    .post-full .post-text:last-child {
+      margin-right: 0; }
+  .post-full h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #02294d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .post-full h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #02294d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #bfbfbf; }
+  .post-full p.post-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7db2e6;
+    font-family: "Bebas Neue", sans-serif;
+    float: left;
+    margin-right: 5px; }
+  .post-full a.post-author, .post-full a.post-tags, .post-full a.post-comments {
+    color: #c6c6c6;
+    font-size: .7rem;
+    line-height: 1.4em;
+    border-right: 1px solid #c6c6c6;
+    font-family: "Georgia", sans-serif;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px; }
+  .post-full a.post-comments {
+    border-right: none; }
+  .post-full p.post-text-content {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #474747;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    clear: both;
+    padding-top: 10px; }
+  .post-full p.about-author-text {
+    font-size: .9rem;
+    line-height: 1.6rem;
+    margin: 10px auto;
+    color: #bfbfbf;
+    border: none;
+    float: left;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    .post-full p.about-author-text:last-child {
+      margin-right: 0; }
+  .post-full .post-tags-bottom {
+    color: #c6c6c6;
+    font-size: .7rem;
+    line-height: 1.4em;
+    border-right: 1px solid #c6c6c6;
+    font-family: "Georgia", sans-serif;
+    font-weight: bold;
+    border: none;
+    float: left;
+    margin: 20px 5px 20px 0px; }
+  .post-full .list-tags-bottom {
+    margin: 20px 0px 20px 20px; }
+    .post-full .list-tags-bottom li {
+      color: #c6c6c6;
+      font-size: .7rem;
+      line-height: 1.4em;
+      border-right: 1px solid #c6c6c6;
+      font-family: "Georgia", sans-serif;
+      display: inline;
+      border: none; }
+    .post-full .list-tags-bottom li:after {
+      content: ", "; }
+    .post-full .list-tags-bottom li:last-child:after {
+      content: ""; }
+  .post-full .button {
+    display: none; }
+  @media only screen and (min-width: 500px) {
+    .post-full {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .post-full:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 768px) {
+    .post-full {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 8.5298%; }
+      .post-full:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 960px) {
+    .post-full {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .post-full:last-child {
+        margin-right: 0; } }
+
+.comments.author {
+  float: left;
+  position: relative;
+  margin: 5px 0px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-left: 0%; }
+  .comments.author:last-child {
+    margin-right: 0; }
+  .comments.author p.author-text {
+    font-size: .9rem;
+    line-height: 1.6rem;
+    color: #9f9f9f;
+    clear: both;
+    padding-bottom: 0px; }
+  .comments.author textarea {
+    border: none;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    padding: 10px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px; }
+    .comments.author textarea:last-child {
+      margin-right: 0; }
+  .comments.author textarea:focus {
+    border: 1px solid #ddd;
+    outline: none; }
+  .comments.author h2 {
+    margin-left: 0px; }
+  .comments.author h3 {
+    margin: 20px 0 0 0; }
+  .comments.author p.post-full-date {
+    display: none; }
+  @media only screen and (min-width: 500px) {
+    .comments.author {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .comments.author:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 768px) {
+    .comments.author {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 8.5298%; }
+      .comments.author:last-child {
+        margin-right: 0; }
+      .comments.author p.author-text {
+        padding-bottom: 10px; }
+      .comments.author p.post-full-date {
+        color: #c6c6c6;
+        font-size: .7rem;
+        line-height: 1.4em;
+        border-right: 1px solid #c6c6c6;
+        font-family: "Georgia", sans-serif;
+        border: none;
+        color: #bfbfbf;
+        margin-bottom: 10px;
+        display: block; } }
+  @media only screen and (min-width: 960px) {
+    .comments.author {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .comments.author:last-child {
+        margin-right: 0; } }
+
 /* -------------------------------- 
 
 Primary style
@@ -274,8 +535,7 @@ html * {
 body {
   font-size: 10%;
   font-family: "Bebas Neue", sans-serif;
-  color: #02294d;
-  background-color: white; }
+  color: #02294d; }
 
 body, html {
   /* important */
@@ -482,7 +742,6 @@ Main components
   margin: 0px auto;
   top: 50px;
   padding: 0% 2%;
-  background-color: #00f;
   width: 100%; }
   @media only screen and (min-width: 768px) {
     .container {
@@ -490,6 +749,30 @@ Main components
   @media only screen and (min-width: 960px) {
     .container {
       top: 130px; } }
+  .container .page-title {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .container .page-title:last-child {
+      margin-right: 0; }
+  .container .post-page-title {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    margin-left: 0%; }
+  @media only screen and (min-width: 768px) {
+    .container .post-page-title {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: bold;
+      background-color: #f8f8f8;
+      margin-left: 7.2%; } }
 
 .post-container {
   float: left;
@@ -567,3 +850,33 @@ Main components
       width: 14.70196%; }
       .archive:last-child {
         margin-right: 0; } }
+
+.archive-full {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: left;
+  margin: 15px 0px; }
+  .archive-full:last-child {
+    margin-right: 0; }
+  .archive-full h2 {
+    font-size: 1.8rem;
+    font-weight: bold; }
+  .archive-full ul {
+    margin-bottom: 25px;
+    position: relative;
+    padding: 20px;
+    margin: 15px 0px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    background-color: #fff; }
+  .archive-full li {
+    font-size: .9rem;
+    line-height: 2.5rem; }
+  .archive-full a {
+    color: #474747; }
+  @media only screen and (min-width: 500px) {
+    .archive-full {
+      display: none; } }

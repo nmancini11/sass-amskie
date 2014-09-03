@@ -29,6 +29,7 @@
   font-size: .7rem;
   line-height: 1.4em;
   border-right: 1px solid $color-3;
+  font-family: $secondary-font;
 }
 
 @mixin post-text {
@@ -37,6 +38,18 @@
     color: darken($color-3, 50%);
     overflow-y: hidden;
     text-overflow: ellipsis;
+}
+
+@mixin about-author-text {
+    font-size: .9rem;
+    line-height: 1.6rem;
+    margin: 10px auto;
+}
+
+@mixin author-text {
+    font-size: .9rem;
+    line-height: 1.6rem;
+    color: #9f9f9f;
 }
 
 @mixin post-date {

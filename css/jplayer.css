@@ -167,7 +167,7 @@ a.jp-volume-max {
 div.jp-audio div.jp-type-single a.jp-mute,
 div.jp-audio div.jp-type-single a.jp-unmute {
 	position: absolute;
-	right: 8%;
+	right: 10%;
 }
 div.jp-audio div.jp-type-playlist a.jp-mute,
 div.jp-audio div.jp-type-playlist a.jp-unmute {

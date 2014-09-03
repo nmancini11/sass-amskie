@@ -1154,6 +1154,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/about-author.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21605,
+		"inputAbbreviatedPath": "\/images\/about-author.png",
+		"outputAbbreviatedPath": "\/images\/about-author.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/amskier-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1172,6 +1183,17 @@
 		"initialSize": 62859,
 		"inputAbbreviatedPath": "\/images\/blog-image.png",
 		"outputAbbreviatedPath": "\/images\/blog-image.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/full-page-post.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 186276,
+		"inputAbbreviatedPath": "\/images\/full-page-post.png",
+		"outputAbbreviatedPath": "\/images\/full-page-post.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1319,6 +1341,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/post.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/scss\/style.scss": {
 		"createSourceMap": 0,

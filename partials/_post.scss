@@ -36,7 +36,7 @@
  		margin-right: 5px;
  	}
 
- 	a {
+ 	a.post-author, a.post-tags, a.post-comments {
  		@include post-link;
  		text-align: center;
 	  	float: left;
@@ -137,13 +137,12 @@
  		margin-right: 5px;
  	}
 
- 	a {
+ 	a.post-author, a.post-tags, a.post-comments {
  		@include post-link;
  		text-align: center;
 	  	float: left;
 	  	margin-right: 10px;
 	  	padding-right: 10px;
-	  	border-right: none;
  	}
 
  	a.post-comments {
@@ -184,4 +183,185 @@
 	 		background-color: #fff;
  			}
  		}
+}
+
+.post-full {
+ 	float: left;
+ 	position: relative;
+ 	margin: 15px 0px;
+ 	-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.05);
+	background-color: #fff;
+	@include span-columns(12);
+	@include shift(0);
+
+ 	.post-image {
+ 		float: left;
+ 		@include span-columns(12);
+ 		max-height: 420px;
+
+ 		img {
+ 			@include fill-parent;
+ 		}
+ 	}
+
+ 	.post-text {
+ 		padding: 30px;
+ 		@include span-columns(12);
+ 		background-color: #fff;
+ 	}
+
+ 	h2 {
+ 		@include header-font;
+ 	}
+
+ 	h4 {
+ 		@include header-font;
+ 		color: #bfbfbf;
+ 	}
+
+ 	p.post-date {
+ 		@include post-date;
+ 		float: left;
+ 		margin-right: 5px;
+ 	}
+
+ 	a.post-author, a.post-tags, a.post-comments {
+ 		@include post-link;
+ 		text-align: center;
+	  	float: left;
+	  	margin-right: 10px;
+	  	padding-right: 10px;
+ 	}
+
+ 	a.post-comments {
+ 		border-right: none;
+ 	}
+
+ 	p.post-text-content {
+ 		@include post-text;
+ 		clear: both;
+ 		padding-top: 10px;
+ 	}
+
+ 	p.about-author-text {
+ 		@include about-author-text;
+ 		color: #bfbfbf;
+ 		border: none;
+ 		float: left;
+ 		@include span-columns(10);
+ 	}
+
+ 	.post-tags-bottom {
+ 		@include post-link;
+ 		font-weight: bold;
+ 		border: none;
+ 		float: left;
+ 		margin: 20px 5px 20px 0px;
+ 	}
+
+ 	.list-tags-bottom {
+ 		margin: 20px 0px 20px 20px;
+ 		li{
+ 			@include post-link;
+ 			display: inline;
+ 			border: none;
+ 		}
+
+ 		li:after {
+		  content: ", ";
+		}
+
+		li:last-child:after {
+		  content: "";
+		}
+ 	}
+
+ 	.button {
+ 		display: none;
+ 	}
+
+ 	@include MQ(S) {
+ 		@include span-columns(12);
+		@include shift(0);
+	}
+
+	@include MQ(M) {
+		@include span-columns(12);
+		@include shift(1);
+	}
+
+ 	@include MQ(L) {
+ 		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.comments.author {
+ 	float: left;
+ 	position: relative;
+ 	margin: 5px 0px;
+	@include span-columns(12);
+	@include shift(0);
+
+	p.author-text {
+ 		@include author-text;
+ 		clear: both;
+ 		padding-bottom: 0px;
+ 	}
+
+ 	textarea {
+ 		border: none;
+ 		border-radius: 4px;
+ 		background-color: #eeeeee;
+ 		padding: 10px;
+ 		@include span-columns(12);
+ 		resize: none;
+ 		height: 100px;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	textarea:focus {
+ 		border: 1px solid #ddd;
+ 		outline: none;
+ 	}
+
+ 	h2 {
+ 		margin-left: 0px;
+ 	}
+ 	h3 {
+ 		margin: 20px 0 0 0;
+ 	}
+
+ 	p.post-full-date {
+ 		display: none;
+ 	}
+
+ 	@include MQ(S) {
+ 		@include span-columns(12);
+		@include shift(0);
+	}
+
+	@include MQ(M) {
+		@include span-columns(12);
+		@include shift(1);
+
+		p.author-text {
+	 		padding-bottom: 10px;
+	 	}
+
+	 	p.post-full-date {
+ 		@include post-link;
+ 		border: none;
+ 		color: #bfbfbf;
+ 		margin-bottom: 10px;
+ 		display: block;
+ 	}
+	}
+
+ 	@include MQ(L) {
+ 		@include span-columns(10);
+		@include shift(1);
+	}
 }
