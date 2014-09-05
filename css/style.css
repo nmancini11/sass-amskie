@@ -59,7 +59,7 @@
       text-transform: uppercase;
       font-weight: bold;
       position: absolute;
-      right: 0px;
+      right: 10px;
       margin-top: 40px; } }
 
 .post {
@@ -99,14 +99,14 @@
     .post .post-text:last-child {
       margin-right: 0; }
   .post h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .post p.post-date {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
@@ -228,14 +228,14 @@
     .post-audio .post-text:last-child {
       margin-right: 0; }
   .post-audio h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .post-audio p.post-date {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
@@ -294,6 +294,169 @@
         .post-audio .post-text:last-child {
           margin-right: 0; } }
 
+.text-post {
+  float: left;
+  position: relative;
+  margin: 15px 0px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .text-post:last-child {
+    margin-right: 0; }
+  .text-post .text-post-text {
+    float: left;
+    height: auto;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.8em;
+    font-family: "Georgia", sans-serif;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 20px;
+    background-color: #60656a; }
+    .text-post .text-post-text:last-child {
+      margin-right: 0; }
+    .text-post .text-post-text .text-post-title {
+      position: relative; }
+      .text-post .text-post-text .text-post-title img {
+        vertical-align: bottom;
+        padding: 10px;
+        margin-right: -20px; }
+      .text-post .text-post-text .text-post-title img.rotate {
+        vertical-align: top;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        margin-left: -20px;
+        margin-right: 0px; }
+  .text-post .post-text {
+    float: left;
+    padding: 30px;
+    height: 271px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background-color: white; }
+    .text-post .post-text:last-child {
+      margin-right: 0; }
+  .text-post h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #02294d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .text-post p.post-date {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #7db2e6;
+    font-family: "Bebas Neue", sans-serif;
+    float: left;
+    margin-right: 5px; }
+  .text-post a.post-author, .text-post a.post-tags, .text-post a.post-comments {
+    color: #c6c6c6;
+    font-size: .7rem;
+    line-height: 1.4em;
+    border-right: 1px solid #c6c6c6;
+    font-family: "Georgia", sans-serif;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px; }
+  .text-post a.post-comments {
+    border-right: none; }
+  .text-post p.post-intro {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #474747;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    clear: both;
+    padding-top: 10px;
+    max-height: 110px; }
+  @media only screen and (min-width: 500px) {
+    .text-post {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      max-height: 575px; }
+      .text-post:last-child {
+        margin-right: 0; }
+      .text-post h2, .text-post p.post-date {
+        font-size: 1.8rem; }
+      .text-post .text-post-text {
+        max-height: 325px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        padding: 10px; }
+        .text-post .text-post-text:last-child {
+          margin-right: 0; }
+      .text-post .text-post-title {
+        position: relative;
+        top: 5%; } }
+  @media only screen and (min-width: 768px) {
+    .text-post .text-post-text {
+      max-height: 270px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .text-post .text-post-text:last-child {
+        margin-right: 0; }
+    .text-post .post-text {
+      max-height: 271px; }
+    .text-post .text-post-title {
+      position: relative;
+      top: 5%;
+      font-size: 1.7rem; } }
+  @media only screen and (min-width: 960px) {
+    .text-post {
+      max-height: 275px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%; }
+      .text-post:last-child {
+        margin-right: 0; }
+      .text-post .post-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        float: left;
+        padding: 30px;
+        height: 275px;
+        background-color: #fff; }
+        .text-post .post-text:last-child {
+          margin-right: 0; }
+      .text-post .text-post-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-right: 0px;
+        height: 275px;
+        overflow-y: hidden;
+        /* "overflow" value must be different from "visible" */
+        text-overflow: ellipsis;
+        padding: 20px;
+        font-size: 2rem; }
+        .text-post .text-post-text:last-child {
+          margin-right: 0; } }
+
 .post-full {
   float: left;
   position: relative;
@@ -320,6 +483,36 @@
       margin-right: 0; }
     .post-full .post-image img {
       width: 100%; }
+  .post-full .text-post-text {
+    float: left;
+    height: auto;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.8em;
+    font-family: "Georgia", sans-serif;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 20px;
+    background-color: #60656a; }
+    .post-full .text-post-text:last-child {
+      margin-right: 0; }
+    .post-full .text-post-text .text-post-title {
+      position: relative; }
+      .post-full .text-post-text .text-post-title img {
+        vertical-align: bottom;
+        padding: 10px;
+        margin-right: -20px; }
+      .post-full .text-post-text .text-post-title img.rotate {
+        vertical-align: top;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        margin-left: -20px;
+        margin-right: 0px; }
   .post-full .post-text {
     padding: 30px;
     float: left;
@@ -330,14 +523,14 @@
     .post-full .post-text:last-child {
       margin-right: 0; }
   .post-full h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .post-full h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #02294d;
     white-space: nowrap;
@@ -345,7 +538,7 @@
     text-overflow: ellipsis;
     color: #bfbfbf; }
   .post-full p.post-date {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
@@ -446,7 +639,8 @@
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-left: 0%; }
+  margin-left: 0%;
+  padding: 0px 10px; }
   .comments.author:last-child {
     margin-right: 0; }
   .comments.author p.author-text {
