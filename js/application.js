@@ -1,28 +1,45 @@
 $(document).ready(function () {
 
-	//implement jPlayer 
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				m4a: "http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-				oga: "http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-			});
-		},
-		swfPath: "js",
-		supplied: "m4a, oga",
-		wmode: "window",
-		smoothPlayBar: true,
-		keyEnabled: true,
-		remainingDuration: true,
-		toggleDuration: true
-	});
+    // Grab all songs on the page then callback the js_audioPlayer
+    // to create a jp-player for each post / song
+    function loadSongs(){
+        var x = 0;
+        $('.audio-song').each(function(){
+           var m4a = $(this).find(".jp-audio").data( "audio-ma" ),
+               ogg = $(this).find(".jp-audio").data( "audio-ogg" );
 
-    // function loadmedia(){
-    //    $('#jquery_jplayer_1').jPlayer('setMedia', {
-    //       oga: 'http://jplayer.org/audio/m4a/Miaow-07-Bubble.ogg',
-    //       m4a: 'http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a'
-    //    });
-    // }
+           x = x + 1;
+
+           $(this).find(".jp-jplayer").attr('id', 'jquery_jplayer_'+x);
+           $(this).find(".jp-audio").attr('id', 'jp_container_'+x);
+           // $(this).find(".jp-gui").addClass("jp-interface_"+x);
+           js_audioPlayer(m4a, ogg, x);
+           console.log(m4a +"  "+ogg +"  "+ x);
+        });
+    }
+
+    loadSongs();
+
+    function js_audioPlayer(fileM4a, fileOgg,location) {
+        $("#jquery_jplayer_" + location).jPlayer( {
+            ready: function () {
+              $(this).jPlayer("setMedia", {
+                    m4a: fileM4a,
+                    ogg: fileOgg
+              });
+            },
+            cssSelectorAncestor: "#jp_container_" + location,
+            swfPath: "/swf",
+            wmode: "window",
+            supplied: "m4a, oga",
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+          });
+    return;
+    }
+
 
     //open-close submenu on mobile
     $('.cd-main-nav').on('click', function() {
