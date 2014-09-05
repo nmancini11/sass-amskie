@@ -17,9 +17,16 @@ $(document).ready(function () {
 		toggleDuration: true
 	});
 
+    // function loadmedia(){
+    //    $('#jquery_jplayer_1').jPlayer('setMedia', {
+    //       oga: 'http://jplayer.org/audio/m4a/Miaow-07-Bubble.ogg',
+    //       m4a: 'http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a'
+    //    });
+    // }
+
     //open-close submenu on mobile
     $('.cd-main-nav').on('click', function() {
-    	if ($(window).width() < 768) {
+    	if (!$('.cd-main-nav input').is(':focus') && $(window).width() < 768) {
 			$(this).children('ul').toggleClass('is-visible short-animated slideInDown');
 		}
     });

@@ -10,13 +10,13 @@
   border-bottom: 3px solid #02294d;
   color: #02294d;
   cursor: pointer;
-  padding: 4px 10px 0px;
+  padding: 4px 20px 0px;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
   left: 30px;
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 30px;
   font-family: "Bebas Neue", sans-serif; }
   .button:hover {
@@ -40,13 +40,16 @@
   font-weight: bold;
   position: static;
   right: 0px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 30px;
   background: #293e51;
   font-family: "Bebas Neue", sans-serif; }
   .post-button:hover {
     background: #02294d;
-    color: #fff; }
+    color: #fff;
+    -webkit-box-shadow: -3px 0px 6px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: -3px 0px 6px 0px rgba(50, 50, 50, 0.4);
+    box-shadow: -3px 0px 6px 0px rgba(50, 50, 50, 0.4); }
   @media only screen and (min-width: 500px) {
     .post-button {
       left: auto; } }
@@ -664,8 +667,11 @@
     .comments.author textarea:last-child {
       margin-right: 0; }
   .comments.author textarea:focus {
-    border: 1px solid #ddd;
-    outline: none; }
+    outline: none;
+    -moz-box-shadow: inset 0 0 4px #aaaaaa;
+    -webkit-box-shadow: inset 0 0 4px #aaaaaa;
+    box-shadow: inset 0 0 4px #aaaaaa;
+    color: #02294d; }
   .comments.author h2 {
     margin-left: 0px; }
   .comments.author h3 {
@@ -870,7 +876,8 @@ Main components
     color: #ffffff;
     background-repeat: no-repeat;
     background-position: left center;
-    outline: none; }
+    outline: none;
+    z-index: 1000; }
   .cd-main-nav input:focus {
     box-shadow: 0 0 5px #03437f;
     padding: 8px 0px 8px 0px;

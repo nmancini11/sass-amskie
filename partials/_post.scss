@@ -494,8 +494,12 @@
  	}
 
  	textarea:focus {
- 		border: 1px solid #ddd;
  		outline: none;
+ 		// background-color: #eeeeee;
+ 		-moz-box-shadow:    inset 0 0 4px #aaaaaa;
+ 		-webkit-box-shadow: inset 0 0 4px #aaaaaa;
+ 		box-shadow:         inset 0 0 4px #aaaaaa;
+ 		color: $color-1;
  	}
 
  	h2 {
