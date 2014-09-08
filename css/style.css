@@ -92,7 +92,7 @@ html {
   border-bottom: 3px solid #02294d;
   color: #02294d;
   cursor: pointer;
-  padding: 4px 20px 0px;
+  padding: 5px 20px 6px;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
@@ -117,7 +117,7 @@ html {
   border-bottom: 3px solid #293e51;
   color: #fff;
   cursor: pointer;
-  padding: 5px 30px 3px;
+  padding: 5px 30px 4px;
   text-transform: uppercase;
   font-weight: bold;
   position: static;
