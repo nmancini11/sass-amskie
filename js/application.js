@@ -8,7 +8,7 @@ $(document).ready(function () {
            var m4a = $(this).find(".jp-audio").data( "audio-ma" ),
                ogg = $(this).find(".jp-audio").data( "audio-ogg" );
 
-           x = x + 1;
+           x++;
 
            $(this).find(".jp-jplayer").attr('id', 'jquery_jplayer_'+x);
            $(this).find(".jp-audio").attr('id', 'jp_container_'+x);
@@ -37,8 +37,19 @@ $(document).ready(function () {
             remainingDuration: true,
             toggleDuration: true
           });
+        // pause all other players
+        $("#jquery_jplayer_" + location).bind($.jPlayer.event.play, function() {
+          $(this).jPlayer("pauseOthers"); // pause all players except this one.
+        });
     return;
     }
+
+    function stopAll(){
+        $(".jplyrselectr").jPlayer("stop");
+        console.log("Aye aye captain! Pausing all");
+    }
+
+    $('.jp-play').on("click", stopAll);
 
 
     //open-close submenu on mobile
