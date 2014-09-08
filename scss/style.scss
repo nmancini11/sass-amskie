@@ -18,6 +18,17 @@ Primary style
 
 -------------------------------- */
 
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeue-webfont.eot');
+	src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BebasNeue-webfont.woff') format('woff'),
+		 url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+		 url('../fonts/BebasNeue-webfont.svg') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
 html * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

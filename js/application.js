@@ -10,9 +10,8 @@ $(document).ready(function () {
                ogg = $(this).find(".jp-audio").data( "audio-ogg" );
 
             $(this).find(".jp-jplayer").attr('id', 'jquery_jplayer_'+x);
-            // $(this).find(".jp-audio").attr('id', 'jp_container_'+x);
             $(this).find(".jp-audio").attr('id', 'jp_interface_'+x);
-            // callback js_audioPlayer to create
+            // callback js_audioPlayer to create jPlayer
             js_audioPlayer(m4a, ogg, x);
             // console.log(m4a +"  "+ogg +"  "+ x);
         });
@@ -20,6 +19,7 @@ $(document).ready(function () {
 
     loadSongs();
 
+    // create jPlayer for each song on the page
     function js_audioPlayer(fileM4a, fileOgg,location) {
         $("#jquery_jplayer_" + location).jPlayer( {
             ready: function () {
@@ -53,6 +53,7 @@ $(document).ready(function () {
         }
     });
 
+    //hide audio player to prevent overlapping with navbar
     $(window).on('scroll', function () {
         var $headerHeight = 100;
         if ($(window).width() < 768){
@@ -72,6 +73,7 @@ $(document).ready(function () {
         });
     });
 
+    //fun stuff
     $('.spin').mouseenter(function(){
         $(this).addClass("animated rotateIn");
     });
