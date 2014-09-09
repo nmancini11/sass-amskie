@@ -1,6 +1,6 @@
 @import 'bourbon'; // http://bourbon.io/
 
-@import "neat/neat"; // neat grid for bourbon
+@import 'neat/neat'; // neat grid for bourbon
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -17,6 +17,29 @@
 Primary style
 
 -------------------------------- */
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeue-webfont.eot');
+	src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BebasNeue-webfont.woff') format('woff'),
+		 url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+		 url('../fonts/BebasNeue-webfont.svg') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueThin';
+    src: url('../fonts/bebasneue-thin.eot');
+    src: url('../fonts/bebasneue-thin.eot') format('embedded-opentype'),
+         url('../fonts/bebasneue-thin.woff') format('woff'),
+         url('../fonts/bebasneue-thin.ttf') format('truetype'),
+         url('../fonts/bebasneue-thin.svg#BebasNeueThin') format('svg');
+    font-style: normal;
+	font-weight: normal;
+}
+
 
 html * {
 	-webkit-font-smoothing: antialiased;
@@ -136,11 +159,16 @@ Main components
 	}	
 }
 
+.highest-of-highs {
+	z-index: 999;
+}
+
 .cd-main-nav {
 	background-size: 36px 36px;
 	cursor: pointer;
 	width: 100%;
 	position: absolute;
+	height: 45px;
 	top: 0px;
 	z-index: 1;
 	background: url('../images/cd-icon-menu.svg') no-repeat right top;
@@ -154,7 +182,7 @@ Main components
 			@include transform(translateY(0%));
 			position: relative;
 			top: 45px;
-			z-index: 1;
+			z-index: 999;
 			padding-top: -40px;
 		}
 	}
@@ -290,7 +318,7 @@ Main components
 	.page-title {
 		font-size: 2rem;
 		line-height: 3rem;
-		font-weight: bold;
+		font-weight: 200;
 		background-color: #f8f8f8;
 		@include span-columns(12);
 	}
@@ -298,7 +326,7 @@ Main components
 	.post-page-title {
 		font-size: 2rem;
 		line-height: 3rem;
-		font-weight: bold;
+		font-weight: 200;
 		background-color: #f8f8f8;
 		margin-left: 0%;
 	}
@@ -311,7 +339,7 @@ Main components
 		.post-page-title {
 			font-size: 2rem;
 			line-height: 3rem;
-			font-weight: bold;
+			font-weight: 200;
 			background-color: #f8f8f8;
 			margin-left: 7.2%;
 		}
@@ -348,7 +376,7 @@ Main components
 
 	h2 {
  		font-size: 1.8rem;
- 		font-weight: bold;
+ 		font-weight: 200;
  	}
 
  	ul {
@@ -369,6 +397,11 @@ Main components
 
  	a {
  		color: darken($color-3, 50%);
+ 	}
+
+ 	a:hover {
+ 		color: darken($color-1, 90%);
+ 		text-shadow: 2px 2px 2px #ddd;
  	}
 
  	@include MQ(S) {
@@ -401,7 +434,7 @@ Main components
 
 	h2 {
  		font-size: 1.8rem;
- 		font-weight: bold;
+ 		font-weight: 200;
  	}
 
  	ul {

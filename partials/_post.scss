@@ -20,7 +20,7 @@
 
  	.post-text {
  		float: left;
- 		padding: 30px;
+ 		padding: 15px;
  		height: 271px;
  		@include span-columns(12);
  		background-color: #fff;
@@ -121,7 +121,7 @@
 
  	.post-text {
  		float: left;
- 		padding: 30px;
+ 		padding: 15px;
  		height: 275px;
  		@include span-columns(12);
  		background-color: #fff;
@@ -226,7 +226,7 @@
 
  	.post-text {
  		float: left;
- 		padding: 30px;
+ 		padding: 15px;
  		height: 271px;
  		@include span-columns(12);
  		background-color: $color-4;
@@ -352,7 +352,7 @@
  		height: auto;
  		@include text-post-text;
  		@include span-columns(12);
- 		padding: 20px;
+ 		padding: 15px;
  		background-color: $color-5;
 
  		.text-post-title {
@@ -377,7 +377,7 @@
  	}
 
  	.post-text {
- 		padding: 30px;
+ 		padding: 15px;
  		@include span-columns(12);
  		background-color: #fff;
  	}
