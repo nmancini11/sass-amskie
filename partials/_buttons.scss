@@ -9,11 +9,12 @@
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
-  left: 30px;
+  left: 15px;
   margin-top: 20px;
   font-size: 1.3rem;
   line-height: 30px;
   font-family: $primary-font;
+  font-weight: 200;
 
   &:hover {
     background: $color-1;

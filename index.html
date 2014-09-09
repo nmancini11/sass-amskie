@@ -24,7 +24,7 @@
 				<!-- ********** -->
 				<!-- ********** -->
 				<!-- REMOVE FOR NON-AUTHENTICATED USERS -->
-				<li><input type="search" name="search" class="search" placeholder="search for keywords or author..."></li>
+				<li><input type="text" placeholder="search for keywords or author..."></li>
 				<li><a href="#home"><img class="settings roto" src="/images/settings.svg">Settings</a></li>
 				<li><a href="#home"><img class="power" src="/images/power.svg">Logout</a></li>
 				<!-- ********** -->
@@ -318,7 +318,7 @@
 			<!-- ********** -->
 			<!-- ********** -->
 			<!-- IMAGE POST -->
-			<article class="post">
+			<article class="post last">
 				<div class="post-image">
 					<img src="images/blog-image.png" alt="post image">
 				</div>
@@ -377,6 +377,16 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/application.js"></script>
 	<script src="js/jPlayer.min.js"></script>
+	<!--<script src="js/waypoints.js"></script>-->
+	<script type="text/javascript">
+	// 	$(document).ready(function() {
+
+	// 	$('article:last').waypoint(function(direction) {
+	// 	  console.log('The last article came into the viewport... implement infinite scroll.');
+	// 	});
+
+	// });
+	</script>
 	
 </body>
 </html>

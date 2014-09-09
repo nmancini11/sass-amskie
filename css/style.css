@@ -96,11 +96,12 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
-  left: 30px;
+  left: 15px;
   margin-top: 20px;
   font-size: 1.3rem;
   line-height: 30px;
-  font-family: "Bebas Neue", sans-serif; }
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200; }
   .button:hover {
     background: #02294d;
     color: #fff; }
@@ -174,7 +175,7 @@ html {
       width: 100%; }
   .post .post-text {
     float: left;
-    padding: 30px;
+    padding: 15px;
     height: 271px;
     float: left;
     display: block;
@@ -189,12 +190,14 @@ html {
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    font-weight: 200; }
   .post p.post-date {
     font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     float: left;
     margin-right: 5px; }
   .post a.post-author, .post a.post-tags, .post a.post-comments {
@@ -303,7 +306,7 @@ html {
     height: 100%; }
   .post-audio .post-text {
     float: left;
-    padding: 30px;
+    padding: 15px;
     height: 275px;
     float: left;
     display: block;
@@ -318,12 +321,14 @@ html {
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    font-weight: 200; }
   .post-audio p.post-date {
     font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     float: left;
     margin-right: 5px; }
   .post-audio a.post-author, .post-audio a.post-tags, .post-audio a.post-comments {
@@ -425,7 +430,7 @@ html {
         margin-right: 0px; }
   .text-post .post-text {
     float: left;
-    padding: 30px;
+    padding: 15px;
     height: 271px;
     float: left;
     display: block;
@@ -440,12 +445,14 @@ html {
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    font-weight: 200; }
   .text-post p.post-date {
     font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     float: left;
     margin-right: 5px; }
   .text-post a.post-author, .text-post a.post-tags, .text-post a.post-comments {
@@ -580,7 +587,7 @@ html {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     background-color: #60656a; }
     .post-full .text-post-text:last-child {
       margin-right: 0; }
@@ -599,7 +606,7 @@ html {
         margin-left: -20px;
         margin-right: 0px; }
   .post-full .post-text {
-    padding: 30px;
+    padding: 15px;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -613,7 +620,8 @@ html {
     color: #02294d;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    font-weight: 200; }
   .post-full h4 {
     font-size: 1.7rem;
     font-weight: bold;
@@ -621,12 +629,14 @@ html {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 200;
     color: #bfbfbf; }
   .post-full p.post-date {
     font-size: 1.7rem;
     font-weight: bold;
     color: #7db2e6;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     float: left;
     margin-right: 5px; }
   .post-full a.post-author, .post-full a.post-tags, .post-full a.post-comments {
@@ -811,6 +821,12 @@ Primary style
   src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg") format("svg");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: 'BebasNeueThin';
+  src: url("../fonts/bebasneue-thin.eot");
+  src: url("../fonts/bebasneue-thin.eot") format("embedded-opentype"), url("../fonts/bebasneue-thin.woff") format("woff"), url("../fonts/bebasneue-thin.ttf") format("truetype"), url("../fonts/bebasneue-thin.svg#BebasNeueThin") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -902,11 +918,15 @@ Main components
       .cd-header img {
         max-height: 100px; } }
 
+.highest-of-highs {
+  z-index: 999; }
+
 .cd-main-nav {
   background-size: 36px 36px;
   cursor: pointer;
   width: 100%;
   position: absolute;
+  height: 45px;
   top: 0px;
   z-index: 1;
   background: url("../images/cd-icon-menu.svg") no-repeat right top; }
@@ -926,7 +946,7 @@ Main components
       transform: translateY(0%);
       position: relative;
       top: 45px;
-      z-index: 1;
+      z-index: 999;
       padding-top: -40px; }
   .cd-main-nav a {
     line-height: normal;
@@ -1041,7 +1061,7 @@ Main components
   .container .page-title {
     font-size: 2rem;
     line-height: 3rem;
-    font-weight: bold;
+    font-weight: 200;
     background-color: #f8f8f8;
     float: left;
     display: block;
@@ -1052,14 +1072,14 @@ Main components
   .container .post-page-title {
     font-size: 2rem;
     line-height: 3rem;
-    font-weight: bold;
+    font-weight: 200;
     background-color: #f8f8f8;
     margin-left: 0%; }
   @media only screen and (min-width: 768px) {
     .container .post-page-title {
       font-size: 2rem;
       line-height: 3rem;
-      font-weight: bold;
+      font-weight: 200;
       background-color: #f8f8f8;
       margin-left: 7.2%; } }
 
@@ -1107,7 +1127,7 @@ Main components
     margin-right: 0; }
   .archive h2 {
     font-size: 1.8rem;
-    font-weight: bold; }
+    font-weight: 200; }
   .archive ul {
     margin-bottom: 25px;
     position: relative;
@@ -1122,6 +1142,9 @@ Main components
     line-height: 2.5rem; }
   .archive a {
     color: #474747; }
+  .archive a:hover {
+    color: black;
+    text-shadow: 2px 2px 2px #ddd; }
   @media only screen and (min-width: 500px) {
     .archive {
       float: left;
@@ -1165,7 +1188,7 @@ Main components
     margin-right: 0; }
   .archive-full h2 {
     font-size: 1.8rem;
-    font-weight: bold; }
+    font-weight: 200; }
   .archive-full ul {
     margin-bottom: 25px;
     position: relative;
