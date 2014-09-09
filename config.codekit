@@ -1262,7 +1262,7 @@
 		},
 	"\/js\/min\/application1-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/application1-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/application1-min-min.js",
@@ -1382,22 +1382,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/scss\/style.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/style.scss",
-		"outputAbbreviatedPath": "\/css\/style.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/text-post.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1416,7 +1400,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "amskier-sass-attempt",
-	"displayValueWasSetByUser": 1,
+	"displayValueWasSetByUser": 0,
 	"iconImageName": "globe_gray"
 	},
 "projectSettings": {

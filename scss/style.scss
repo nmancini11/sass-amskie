@@ -29,17 +29,6 @@ Primary style
 	font-weight: normal;
 }
 
-@font-face {
-    font-family: 'BebasNeueThin';
-    src: url('../fonts/bebasneue-thin.eot');
-    src: url('../fonts/bebasneue-thin.eot') format('embedded-opentype'),
-         url('../fonts/bebasneue-thin.woff') format('woff'),
-         url('../fonts/bebasneue-thin.ttf') format('truetype'),
-         url('../fonts/bebasneue-thin.svg#BebasNeueThin') format('svg');
-    font-style: normal;
-	font-weight: normal;
-}
-
 
 html * {
 	-webkit-font-smoothing: antialiased;
