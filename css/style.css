@@ -821,12 +821,6 @@ Primary style
   src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg") format("svg");
   font-style: normal;
   font-weight: normal; }
-@font-face {
-  font-family: 'BebasNeueThin';
-  src: url("../fonts/bebasneue-thin.eot");
-  src: url("../fonts/bebasneue-thin.eot") format("embedded-opentype"), url("../fonts/bebasneue-thin.woff") format("woff"), url("../fonts/bebasneue-thin.ttf") format("truetype"), url("../fonts/bebasneue-thin.svg#BebasNeueThin") format("svg");
-  font-style: normal;
-  font-weight: normal; }
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -896,6 +890,8 @@ Main components
   .cd-header .cd-logo {
     float: left;
     margin: 0px 0 0 3%; }
+    .cd-header .cd-logo a {
+      z-index: 999; }
     .cd-header .cd-logo img {
       max-height: 45px; }
   @media only screen and (min-width: 500px) {
@@ -918,17 +914,12 @@ Main components
       .cd-header img {
         max-height: 100px; } }
 
-.highest-of-highs {
-  z-index: 999; }
-
 .cd-main-nav {
   background-size: 36px 36px;
   cursor: pointer;
   width: 100%;
-  position: absolute;
   height: 45px;
   top: 0px;
-  z-index: 1;
   background: url("../images/cd-icon-menu.svg") no-repeat right top; }
   .cd-main-nav ul {
     width: 100%;
@@ -944,7 +935,7 @@ Main components
       -ms-transform: translateY(0%);
       -o-transform: translateY(0%);
       transform: translateY(0%);
-      position: relative;
+      position: absolute;
       top: 45px;
       z-index: 999;
       padding-top: -40px; }
@@ -1173,7 +1164,7 @@ Main components
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 14.70196%; }
+      width: 6.17215%; }
       .archive:last-child {
         margin-right: 0; } }
 

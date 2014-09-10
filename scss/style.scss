@@ -108,6 +108,10 @@ Main components
 		float: left;
 		margin: 0px 0 0 3%;
 
+		a {
+			z-index: 999;
+		}
+
 		img {
 			max-height: $header-height-ES;
 		}
@@ -148,18 +152,12 @@ Main components
 	}	
 }
 
-.highest-of-highs {
-	z-index: 999;
-}
-
 .cd-main-nav {
 	background-size: 36px 36px;
 	cursor: pointer;
 	width: 100%;
-	position: absolute;
 	height: 45px;
 	top: 0px;
-	z-index: 1;
 	background: url('../images/cd-icon-menu.svg') no-repeat right top;
 
 	ul {
@@ -169,7 +167,7 @@ Main components
 
 		&.is-visible {
 			@include transform(translateY(0%));
-			position: relative;
+			position: absolute;
 			top: 45px;
 			z-index: 999;
 			padding-top: -40px;
@@ -412,7 +410,7 @@ Main components
 	}
 
  	@include MQ(L) {
- 		@include span-columns(2);
+ 		@include span-columns(1);
 	}
 }
 
